@@ -1,0 +1,124 @@
+html { 
+    scroll-behavior: smooth; /*Adiciona um efeito de suavização ao rolar a página*/
+}
+
+body {
+    background: linear-gradient(120deg, #f0f8ff, #e0f7fa);
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#imagem_pessoal { /*Daqui em diante cuida da minha imagem de perfil*/
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #4CAF50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    filter: grayscale(80%);
+    transition: transform 1s ease, border 1s ease, filter 1s ease;
+}
+
+#imagem_pessoal:hover {
+    transform: scale(1.05);
+    border: 5px solid #4ce051;
+    filter: grayscale(0);
+}
+
+
+#informações { /*Daqui em diante cuida das informaões abaixo da minha imagem*/
+    background: #E0F7FA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 2s ease;
+}
+
+#informações:hover {
+    transform: scale(1.08);
+}
+
+details { /*Daqui em diante controla o details*/
+    margin: 20px 0;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+details[open] summary {
+    transition: 10s ease;
+    color: #2196F3;
+}
+
+details[open] {
+    max-height: 500px;
+}
+
+details:not([open]) {
+    max-height: 50px;
+}
+
+summary {
+    cursor: pointer; /*Muda o estilo do ponteiro quando o mouse está em cima do "summary"*/
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4CAF50;
+    border-bottom: 2px solid #FFC107;
+    transition: color 0.3s ease;
+}
+
+summary:hover {
+    color: #4dfe53;
+}
+
+#música_de_fundo { /* Daqui em diante controla a múpsica de fundo*/
+    opacity: 10%;
+    transition: opacity 3s ease;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+
+#música_de_fundo:hover {
+    opacity: 100%;
+}
+
+audio {
+    width: 100%;
+    background: aliceblue;
+    border: 2px solid #ddfffb;
+    border-radius: 10px;
+}
+
+.logos { /*Daqui em diante já é a logo do linkedln*/
+    text-decoration: none;
+    color: #333;
+    justify-items: center;
+    color: #0077B5;
+    transition: color 1s ease;
+}
+
+.logos {
+    width: 10%;
+    height: 10%;
+    padding: 10px 0 0 10px;
+}
+
+/* "hover" é como um "quando o mouse esiver em cima"*/
+
+/* "Details[open]" manipula o "details" quando ele abre*/ 
