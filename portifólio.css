@@ -119,6 +119,12 @@ audio {
     padding: 10px 0 0 10px;
 }
 
+#projetos_link {
+    text-decoration: none;
+    color: #333;
+    margin-top: 5px;
+}
+
 /* "hover" é como um "quando o mouse esiver em cima"*/
 
 /* "Details[open]" manipula o "details" quando ele abre*/ 
