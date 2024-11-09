@@ -86,25 +86,6 @@ summary:hover {
     color: #4dfe53;
 }
 
-#música_de_fundo { /* Daqui em diante controla a múpsica de fundo*/
-    opacity: 10%;
-    transition: opacity 3s ease;
-    background-color: aliceblue;
-    align-items: center;
-    justify-content: center;
-}
-
-#música_de_fundo:hover {
-    opacity: 100%;
-}
-
-audio {
-    width: 100%;
-    background: aliceblue;
-    border: 2px solid #ddfffb;
-    border-radius: 10px;
-}
-
 .logos { /*Daqui em diante já é a logo do linkedln*/
     text-decoration: none;
     color: #333;
